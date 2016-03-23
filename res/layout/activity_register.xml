@@ -1,0 +1,80 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    	xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+	android:orientation="vertical"
+    tools:context=".RegisterActivity" >
+	<com.ui.TitleNoLoginLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ></com.ui.TitleNoLoginLayout>
+    <TextView 
+    android:text="学生姓名"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    />
+	<EditText 
+    android:id="@+id/reUsername"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:maxLines="1"
+    android:hint="请输入学生姓名"
+    />
+
+    <TextView 
+    android:text="账号密码"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    />
+	<EditText 
+    android:id="@+id/rePwd"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:inputType="textPassword"
+    android:maxLines="1"
+    android:hint="请输入账号密码"
+    />
+	<TextView 
+    android:text="再输入密 码"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    />
+	<EditText 
+    android:id="@+id/rrePwd"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+ 	android:maxLines="1"
+    android:inputType="textPassword"
+    android:hint="请重新输入密码"
+    />
+	<RadioGroup
+	    android:id="@+id/subject"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	 >
+	    <RadioButton 
+	       android:id="@+id/rart"
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       android:checked="true"
+	       android:text="文科"/>
+	    <RadioButton 
+	       android:id="@+id/rscience"
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       android:text="理科"/>
+	</RadioGroup>   
+	
+	<Button
+	    android:id="@+id/registerbtn"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="注册"
+	    />
+</LinearLayout>
+</ScrollView>

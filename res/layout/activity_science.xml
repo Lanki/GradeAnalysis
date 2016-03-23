@@ -1,0 +1,135 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F2F2F2" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".ScienceActivity" >
+
+        <com.ui.TitleLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </com.ui.TitleLayout>
+
+        <RelativeLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+	        
+	        <TextView
+	            android:id="@+id/susername"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="5dip"
+	            android:layout_marginRight="5dip"
+	            android:layout_alignParentRight="true" />
+            
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:background="#ff005484" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:background="#ff0883cb" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <com.ui.ImageBtnLayout
+                    android:id="@+id/addgrade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true" />
+
+                <com.ui.ImageBtnLayout
+                    android:id="@+id/searchChinese"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true" />
+
+                <com.ui.ImageBtnLayout
+                    android:id="@+id/searchMath"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="75dp"
+                android:paddingRight="75dp" >
+
+                <com.ui.ImageBtnLayout
+                    android:id="@+id/searchEnglish"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true" />
+
+                <com.ui.ImageBtnLayout
+                    android:id="@+id/searchPhysical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true" />
+                
+                <com.ui.ImageBtnLayout 
+                    android:id="@+id/searchTotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    />
+                
+                
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <com.ui.ImageBtnLayout
+                    android:id="@+id/searchBiology"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"/>
+                
+                <com.ui.ImageBtnLayout
+                    android:id="@+id/searchChemistry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true" />
+               
+
+                
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
